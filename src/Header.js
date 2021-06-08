@@ -8,7 +8,7 @@ function Header() {
             {/* first thing i want is the logo. */}
             <div className="header">
             <a href="https://www.jio.com/">
-                <img className="header_logo" src="https://cdn.ndtv.com/tech/images/gadgets/thumb/reliance_jio_small.jpg"></img>
+                <img className="header_logo" src="https://cdn.ndtv.com/tech/images/gadgets/thumb/reliance_jio_small.jpg" alt=""></img>
             </a>
 
             <div className="heading">
