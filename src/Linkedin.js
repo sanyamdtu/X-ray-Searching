@@ -42,7 +42,7 @@ export default function Linkedin() {
       link += "+"; 
       var tmp = "";
       for (var i = 0; i < location.length; i++){
-        if (location[i] == " ") {
+        if (location[i] === " ") {
           link += (quote + tmp + quote);
           link += " OR "; 
           tmp = "";
@@ -50,7 +50,7 @@ export default function Linkedin() {
           continue; 
         } else {
           tmp += location[i];
-          if (i == location.length - 1) {
+          if (i === location.length - 1) {
             link += (quote + tmp + quote); 
           }
         }
