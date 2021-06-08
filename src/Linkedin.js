@@ -4,7 +4,6 @@ import "./Linkedin.css"
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default function Linkedin() {
-    const [country, setCountry] = useState("");
     const [jobTitle, setjobTitle] = useState("");
     const [location, setlocation] = useState("");
     const [exclude, setexclude] = useState([]); 
@@ -91,7 +90,7 @@ export default function Linkedin() {
   <div className="form-group row">
     <label  className="col-sm-2 col-form-label">Country: </label>
     <div className="col-sm-10">
-      <input type="text"  className="form-control" id="inputEmail3" placeholder="Eg. India" onChange={(e)=>{setCountry(e.target.value)}}></input>
+      <input type="text"  className="form-control" id="inputEmail3" placeholder="Eg. India"></input>
     </div>
   </div>
   <div className="form-group row">
