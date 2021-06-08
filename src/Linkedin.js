@@ -1,19 +1,15 @@
 import React, { useState } from 'react'
 import "./Linkedin.css"
 
-import { Alert } from "bootstrap"; 
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { useHistory } from 'react-router';
 
 export default function Linkedin() {
    
-    const [country, setCountry] = useState("");
     const [jobTitle, setjobTitle] = useState("");
     const [location, setlocation] = useState("");
     const [exclude, setexclude] = useState([]); 
     const [education, seteducation] = useState("");
     const [currentEmpoyer, setcurrentEmpoyer] = useState("");
-    const [f, setf] = useState(false); 
   
 
   var link = "http://www.google.com/search?q=+"; 
