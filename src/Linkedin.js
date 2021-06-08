@@ -24,7 +24,7 @@ export default function Linkedin() {
       var j = jobTitle.toUpperCase(); 
       var tmp = "";
       for (var i = 0; i < j.length; i++){
-        if (j[i] == " ") {
+        if (j[i] === " ") {
           link += (quote + tmp + quote);
           link += " OR ";
           tmp = "";
@@ -32,7 +32,7 @@ export default function Linkedin() {
           continue; 
         } else {
           tmp += j[i];
-          if (i == j.length - 1) {
+          if (i === j.length - 1) {
             link += (quote + tmp + quote); 
           }
         }
@@ -61,12 +61,12 @@ export default function Linkedin() {
       link += "-" + quote; 
       var tmp = "";
       for (var i = 0; i < exclude.length; i++){
-        if (exclude[i] == " ") {
+        if (exclude[i] === " ") {
           link += (tmp + "+"); 
           tmp = ""; 
         } else {
           tmp += exclude[i];
-          if (i == exclude.length - 1) {
+          if (i === exclude.length - 1) {
             link += tmp; 
           }
         }
