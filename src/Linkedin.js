@@ -40,8 +40,8 @@ export default function Linkedin() {
     }
     if (location.length > 0) {
       link += "+"; 
-      var tmp = "";
-      for (var i = 0; i < location.length; i++){
+       tmp = "";
+      for ( i = 0; i < location.length; i++){
         if (location[i] === " ") {
           link += (quote + tmp + quote);
           link += " OR "; 
@@ -59,8 +59,8 @@ export default function Linkedin() {
     
     if (exclude.length > 0) {
       link += "-" + quote; 
-      var tmp = "";
-      for (var i = 0; i < exclude.length; i++){
+       tmp = "";
+      for (i = 0; i < exclude.length; i++){
         if (exclude[i] === " ") {
           link += (tmp + "+"); 
           tmp = ""; 
