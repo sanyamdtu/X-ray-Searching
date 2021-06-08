@@ -4,7 +4,7 @@ import "./Linkedin.css"
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default function Linkedin() {
-   
+    const [country, setCountry] = useState("");
     const [jobTitle, setjobTitle] = useState("");
     const [location, setlocation] = useState("");
     const [exclude, setexclude] = useState([]); 
